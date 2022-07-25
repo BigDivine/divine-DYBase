@@ -13,7 +13,7 @@
         android:layout_marginTop="@dimen/dp_5"
         android:layout_marginRight="@dimen/dp_5"
         android:layout_marginBottom="@dimen/dp_10"
-        android:drawableTop="@mipmap/ic_launcher"
+        android:drawableTop="@mipmap/ic_base"
         android:drawablePadding="@dimen/dp_5"
         android:textColor="@color/black"
         android:textSize="@dimen/sp_16"

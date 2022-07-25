@@ -57,7 +57,7 @@ public class AppLoadingView extends View {
         mPaintSin.setStrokeWidth(2f);
         mPaintSin.setAntiAlias(true);
         mCanvas.drawRect(0,0,getWidth(),getHeight(),mPaintSin);
-        Bitmap bmpLauncher = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher);
+        Bitmap bmpLauncher = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_base);
         Matrix mMatrix = new Matrix();
         int bmpH = bmpLauncher.getHeight();
         int bmpW = bmpLauncher.getWidth();

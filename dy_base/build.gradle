@@ -25,11 +25,6 @@ dependencies {
     implementation AndroidX.AppCompat
     implementation AndroidX.ConstraintLayout
 }
-//task comps {
-//    afterEvaluate {
-//        println("Components: " + components*.name)
-//    }
-//}
 //jitpack.io ERROR: No build artifacts found 问题解决
 //由于在Android studio开发库时会带com.android.libraryplugin，生成了artifacts
 //所以我们需要手动添加artifacts。
