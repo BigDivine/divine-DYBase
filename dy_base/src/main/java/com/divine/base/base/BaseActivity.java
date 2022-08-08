@@ -23,8 +23,6 @@ import com.divine.base.SecurityCheck;
 import com.divine.base.getpermission.PermissionPageUtils;
 import com.divine.base.getpermission.PermissionUtil;
 import com.divine.base.utils.ActivitiesManager;
-import com.divine.base.utils.ui.DialogUtils;
-import com.divine.base.utils.ui.ToastUtils;
 
 import java.util.List;
 
@@ -103,31 +101,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         activitiesManager = ActivitiesManager.getInstance();
         activitiesManager.addActivity(this);
 
-        //手机root权限检查
-        if (SecurityCheck.isRoot()) {
-            DialogUtils.showConfirmDialog(this
-                    , "提示"
-                    , "您的手机处于Root状态，不允许应用APP，请解除Root状态后应用"
-                    , (dialog, which) -> {
-                        dialog.dismiss();
-                        this.finish();
-                    }
-            );
-            return;
-        }
-        //app应用签名校验,通过SHA1来验证
-        if (!SecurityCheck.signCheck(this)) {
-            DialogUtils.showConfirmDialog(this
-                    , "提示"
-                    , "您的应用签名信息验证失败，不允许使用，请下载官方版本使用"
-                    , (dialog, which) -> {
-                        dialog.dismiss();
-                        this.finish();
-                    }
-            );
-            return;
-        }
-
         requestPermissions = requestPermissions();
         // 获取未授权的权限
         String[] deniedPermissions = PermissionUtil.getDeniedPermissions(this, requestPermissions);
@@ -150,7 +123,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onStop();
         boolean background = !isForeground(this);
         if (background)
-            ToastUtils.showShort(this, "当前应用已转到后台运行");
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
 
     /**

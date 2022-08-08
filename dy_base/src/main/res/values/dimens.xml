@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <dimen name="action_bar_height">63dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+</resources>
