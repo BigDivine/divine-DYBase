@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/normal_action_bar_left"
-        android:layout_width="@dimen/dy_dp_50"
+        android:layout_width="@dimen/dy_50dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -22,17 +22,17 @@
             android:id="@+id/normal_action_bar_back"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="@dimen/dy_dp_10"
-            android:paddingTop="@dimen/dy_dp_20"
-            android:paddingRight="@dimen/dy_dp_10"
             android:background="@android:color/transparent"
-            android:paddingBottom="@dimen/dy_dp_20"
+            android:paddingLeft="@dimen/dy_10dp"
+            android:paddingTop="@dimen/dy_20dp"
+            android:paddingRight="@dimen/dy_10dp"
+            android:paddingBottom="@dimen/dy_20dp"
             android:src="@mipmap/ic_back_white" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/normal_action_bar_center"
-        android:layout_width="@dimen/dy_dp_0"
+        android:layout_width="@dimen/dy_0dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -49,14 +49,14 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="这是标题这是标题"
-            android:textColor="@color/white"
-            android:textSize="@dimen/dy_sp_17"
+            android:textColor="@color/dy_white"
+            android:textSize="@dimen/dy_17dp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/normal_action_bar_right"
-        android:layout_width="50dp"
+        android:layout_width="@dimen/dy_50dp"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -66,14 +66,14 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/normal_action_bar_menu"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:paddingLeft="10dp"-->
-<!--            android:paddingTop="20dp"-->
-<!--            android:paddingRight="10dp"-->
-<!--            android:paddingBottom="20dp"-->
-<!--            android:src="@mipmap/icon_toolbar_more_line" />-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/normal_action_bar_menu"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:paddingLeft="10dp"-->
+        <!--            android:paddingTop="20dp"-->
+        <!--            android:paddingRight="10dp"-->
+        <!--            android:paddingBottom="20dp"-->
+        <!--            android:src="@mipmap/icon_toolbar_more_line" />-->
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
