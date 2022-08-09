@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/normal_action_bar_left"
-        android:layout_width="50dp"
+        android:layout_width="@dimen/dy_dp_50"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -22,17 +22,17 @@
             android:id="@+id/normal_action_bar_back"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="@dimen/dy_dp_10"
+            android:paddingTop="@dimen/dy_dp_20"
+            android:paddingRight="@dimen/dy_dp_10"
             android:background="@android:color/transparent"
-            android:paddingBottom="20dp"
+            android:paddingBottom="@dimen/dy_dp_20"
             android:src="@mipmap/ic_back_white" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/normal_action_bar_center"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dy_dp_0"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -50,7 +50,7 @@
             android:gravity="center"
             android:text="这是标题这是标题"
             android:textColor="@color/white"
-            android:textSize="@dimen/sp_17"
+            android:textSize="@dimen/dy_sp_17"
             android:textStyle="bold" />
     </LinearLayout>
 

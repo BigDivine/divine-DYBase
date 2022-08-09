@@ -82,7 +82,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(getContentViewId());
         Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(getResources().getColor(R.color.LoginThemeColor));
+        window.setStatusBarColor(getResources().getColor(R.color.dy_theme_color));
         if (showToolbar()) {
             View mToolbar = getBaseToolbar().getToolbar();
             getSupportActionBar().show();

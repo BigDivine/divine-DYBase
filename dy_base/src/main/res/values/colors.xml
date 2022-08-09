@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="LoginThemeColor">#000000</color>
-    <color name="LoginWaveColor">#3cEF424C</color>
+    <color name="dy_theme_color">#000000</color>
 
-    <color name="white">#FFFFFF</color>
+    <color name="dy_white">#FFFFFF</color>
+    <color name="dy_black">#000000</color>
+    <color name="dy_red">#ff0000</color>
+    <color name="dy_green">#00ff00</color>
+    <color name="dy_blue">#0000ff</color>
 </resources>

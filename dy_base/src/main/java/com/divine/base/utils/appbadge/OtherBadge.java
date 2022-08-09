@@ -39,7 +39,7 @@ public class OtherBadge {
         Notification notification = new NotificationCompat.Builder(context, "badge")
                 .setContentTitle("应用提醒")
                 .setContentText("您有" + count + "条未读消息")
-                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_base))
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_dy_launcher))
                 .setAutoCancel(true)
                 .setChannelId("badge")
                 .setNumber(count)

@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/action_bar_left"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/dy_dp_70"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -19,18 +19,18 @@
 
         <ImageButton
             android:id="@+id/action_bar_back"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dy_dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:paddingLeft="@dimen/dy_dp_10"
+            android:paddingTop="@dimen/dy_dp_20"
+            android:paddingBottom="@dimen/dy_dp_20"
             android:src="@mipmap/ic_back_white" />
 
         <TextView
             android:id="@+id/action_bar_back_text"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/dy_dp_0"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -41,7 +41,7 @@
 
     <LinearLayout
         android:id="@+id/action_bar_right"
-        android:layout_width="70dp"
+        android:layout_width="@dimen/dy_dp_70"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -54,10 +54,10 @@
             android:id="@+id/action_bar_menu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="20dp"
+            android:paddingLeft="@dimen/dy_dp_10"
+            android:paddingTop="@dimen/dy_dp_20"
+            android:paddingRight="@dimen/dy_dp_10"
+            android:paddingBottom="@dimen/dy_dp_20"
             android:src="@mipmap/ic_more_line_white"
         />
 
@@ -65,8 +65,8 @@
             android:id="@+id/action_bar_menu_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/dp_12"
-            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dy_dp_12"
+            android:layout_marginBottom="@dimen/dy_dp_12"
             android:background="@android:color/transparent"
             android:gravity="center"
             android:text="确定"
@@ -75,7 +75,7 @@
 
     <LinearLayout
         android:id="@+id/action_bar_center"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dy_dp_0"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
@@ -93,7 +93,7 @@
             android:gravity="center"
             android:text="这是标题这是标题"
             android:textColor="@color/white"
-            android:textSize="@dimen/sp_17"
+            android:textSize="@dimen/dy_sp_17"
             android:textStyle="bold" />
     </LinearLayout>
 
