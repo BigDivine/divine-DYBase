@@ -95,7 +95,8 @@ public abstract class BaseActivity extends AppCompatActivity {
             Toolbar parent = (Toolbar) mToolbar.getParent();
             parent.setContentInsetsAbsolute(0, 0);
         } else {
-            getSupportActionBar().hide();
+            if (null != getSupportActionBar())
+                getSupportActionBar().hide();
         }
 
         activitiesManager = ActivitiesManager.getInstance();
